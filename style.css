@@ -423,14 +423,28 @@ header .content {
     background-color: white;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     padding-top: 20px;
-    opacity: 0;
+    opacity: 1;
+    bottom: 40px;
     transition: opacity 1s;
   }
   img {
 
 height:490px !important;
 width:400px !important;
+  }
+  .grid__item img {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+    -webkit-transition: -webkit-filter .4s ease;
+    transition: -webkit-filter .4s ease;
+    transition: filter .4s ease;
+    transition: filter .4s ease, -webkit-filter .4s ease;
+    -webkit-transition: filter .4s ease;
+    -moz-transition: filter .4s ease;
+    -o-transition: filter .4s ease;
+    display: block;
+
   }
 }
