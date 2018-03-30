@@ -217,7 +217,9 @@ a {
 .grid__item img:hover {
     filter:none;
 }
-
+.project-description:hover + img {
+  filter:none;
+}
 
 /* .hidden {
   display: none;
@@ -229,13 +231,20 @@ a {
 .project-description {
   position: absolute;
   background-color: white;
-  bottom:10px;
+  bottom:1px;
+  width:100%;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
   padding-top: 20px;
   opacity: 0;
   transition: opacity 1s;
+}
+.sub-paragraph {
+color:#777777;
+}
+.main-paragrah {
+  color:#333333;
 }
 .show {
   opacity: inherit;

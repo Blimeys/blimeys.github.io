@@ -6,6 +6,6 @@ $(document).ready(function() {
         $('.project-description',this).removeClass('show');
     });
 		$('.grid__item').click(function(){
-			$('.project-description',this).addClass('show');
+			$('.project-description',this).toggleClass('show');
 		})
 });
