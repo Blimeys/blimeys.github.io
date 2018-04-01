@@ -427,6 +427,7 @@ header .content {
     padding-top: 20px;
     opacity: 1;
     bottom: 40px;
+    width:95vw;
     transition: opacity 1s;
   }
   img {
